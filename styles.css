@@ -1,0 +1,39 @@
+html,body{
+  height: 100%;
+  width : 100%;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+svg{
+  position: relative;
+  left: 80px;
+}
+
+h1{
+  position:absolute;
+  top:30px;
+
+}
+
+.land {
+  fill: #CCCCCC;
+  fill-opacity: 1;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 0.5;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFF;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
