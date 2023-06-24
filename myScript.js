@@ -26,7 +26,6 @@ button2.addEventListener('click', function() {
   button2.style.backgroundColor = 'pink';
   h1.innerHTML = '<span style="color: red;">3L</span>기준 가정용 <span style="color: red;">음식물</span>쓰레기봉투 평균가격비교';
   h1.style.display = 'block';
-
   var elements = document.querySelectorAll('[title]');
   for (var i = 0; i < elements.length; i++) {
     elements[i].style.fill = 'rgba(255, 255, 255)'; 
@@ -112,9 +111,9 @@ function showTooltip(data, element) {
 
   tooltip = document.createElement('div');
   tooltip.classList.add('tooltip');
-  tooltip.innerHTML = '<p>' + data.adr_do + '</p><p>' + data.avg + '</p>';
+  tooltip.innerHTML = '<p>' + data.adr_do + '</p><p>평균 ' + data.avg + ' 원</p>';
   if (data.avg == null) {
-    tooltip.innerHTML = '<p>' + data.adr_do + '</p><p>' + 0 + '</p>';
+    tooltip.innerHTML = '<p>' + data.adr_do + '</p><p>평균 ' + 0 + ' 원</p>';
   }
 
   // 말풍선 요소의 위치 설정
